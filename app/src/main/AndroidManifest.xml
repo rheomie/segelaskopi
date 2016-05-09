@@ -15,7 +15,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".DetailInfoActivity"></activity>
+        <activity android:name=".DetailInfoActivity" />
+        <activity android:name=".GramActivity" />
+        <activity android:name=".ListRasioActivity" />
+        <activity android:name=".RatioActivity"></activity>
     </application>
 
 </manifest>

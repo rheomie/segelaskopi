@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">Segelas Kopi</string>
+    <string name="rasio">Rasio</string>
+    <string name="kopi">Kopi</string>
+    <string name="_0">0</string>
+    <string name="air">Air</string>
+    <string-array name="rasioArray">
+        <item>1 : 10</item>
+        <item>1 : 11</item>
+        <item>1 : 12</item>
+        <item>1 : 13</item>
+        <item>1 : 14</item>
+        <item>1 : 15</item>
+    </string-array>
 </resources>
