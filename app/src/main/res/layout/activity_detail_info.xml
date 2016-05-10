@@ -4,10 +4,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#EFEBE9"
-    android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
     android:scrollbars="none"
     tools:context="iak.segelaskopi.DetailInfoActivity">
 
@@ -24,13 +22,13 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
                 android:background="#FFFFFF"
                 android:orientation="vertical">
 
                 <ImageView
                     android:layout_width="200dp"
                     android:layout_height="150dp"
+                    android:layout_marginTop="8dp"
                     android:id="@+id/gambarAtas"
                     android:layout_gravity="center_horizontal"/>
                 <TextView
@@ -57,7 +55,6 @@
             <LinearLayout
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
                 android:layout_marginTop="10dp"
                 android:background="#FFFFFF"
                 android:orientation="vertical">
@@ -91,7 +88,6 @@
             <LinearLayout
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
                 android:layout_marginTop="10dp"
                 android:background="#FFFFFF"
                 android:orientation="vertical">
@@ -129,7 +125,6 @@
             <LinearLayout
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
                 android:layout_marginTop="10dp"
                 android:background="#FFFFFF"
                 android:orientation="vertical">

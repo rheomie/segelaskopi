@@ -3,4 +3,6 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+    <color name="tombolUnclick">#7B1FA2</color>
+    <color name="tombolClick">#BA68C8</color>
 </resources>

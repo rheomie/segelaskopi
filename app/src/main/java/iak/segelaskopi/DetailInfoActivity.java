@@ -12,7 +12,7 @@ import android.widget.TextView;
 public class DetailInfoActivity extends AppCompatActivity {
     Intent i;
     int linkGambar;
-    TextView ketA,judulB,ketB;
+    TextView ketA,judulB,ketB,ketDua,ketEmpat,judulDua,judulEmpat;
     CardView kotakAtas,kotakBawah;
     ImageView gambarAtas;
     @Override
@@ -30,6 +30,12 @@ public class DetailInfoActivity extends AppCompatActivity {
 
         kotakAtas = (CardView) findViewById(R.id.kotakDua);
         kotakBawah = (CardView) findViewById(R.id.kotakEmpat);
+
+        judulDua = (TextView) findViewById(R.id.judulDetailKotakDua);
+        ketDua = (TextView) findViewById(R.id.keteranganDetailKotakDua);
+        judulEmpat = (TextView) findViewById(R.id.judulDetailKotakEmpat);
+        ketEmpat = (TextView) findViewById(R.id.keteranganDetailKotakEmpat);
+
         i = getIntent();
         kotakAtas.setVisibility(i.getIntExtra("kotakDua",200));
         kotakBawah.setVisibility(i.getIntExtra("kotakEmpat",200));
@@ -40,6 +46,10 @@ public class DetailInfoActivity extends AppCompatActivity {
         linkGambar = i.getIntExtra("gambar",linkGambar);
         gambarAtas.setImageResource(linkGambar);
 
+        judulDua.setText(""+i.getStringExtra("judDua"));
+        judulEmpat.setText(""+i.getStringExtra("judEmpat"));
+        ketDua.setText(Html.fromHtml(""+i.getStringExtra("ketDua")));
+        ketEmpat.setText(Html.fromHtml(""+i.getStringExtra("ketEmpat")));
     }
 
 

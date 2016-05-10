@@ -1,8 +1,8 @@
 package iak.segelaskopi;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
@@ -32,51 +32,52 @@ public class ListRasioActivity extends AppCompatActivity implements AdapterView.
         switch (position) {
             case 0:
                 i = new Intent(this, GramActivity.class);
-                i.putExtra("judul","Rasio Umum");
+                i.putExtra("judul", "Rasio Umum");
                 startActivity(i);
                 break;
             case 1:
                 i = new Intent(this, RatioActivity.class);
-                i.putExtra("judul","Golden Ratio");
-                i.putExtra("rasioAir",17.42);//golden ratio
-                i.putExtra("keterangan","");
+                i.putExtra("judul", "Golden Ratio");
+                i.putExtra("rasioAir", 17.42);//golden ratio
+                i.putExtra("keterangan", "");
                 startActivity(i);
                 break;
             case 2:
                 i = new Intent(this, RatioActivity.class);
-                i.putExtra("judul","Death Wish Coffee Ratio");
-                i.putExtra("rasioAir",4.864864864864864864864864864);//Death Wish Coffee Brewing Ratio
-                i.putExtra("keterangan","");
+                i.putExtra("judul", "Death Wish Coffee Ratio");
+                i.putExtra("rasioAir", 4.864864864864864864864864864);//Death Wish Coffee Brewing Ratio
+                i.putExtra("keterangan", "");
                 startActivity(i);
                 break;
             case 3:
                 i = new Intent(this, RatioActivity.class);
-                i.putExtra("judul","Black Bear Coffee Standard Ratio");
-                i.putExtra("rasioAir",16.6945);//Blackbearcoffee Standard Brewing Ratio
-                i.putExtra("keterangan","");
+                i.putExtra("judul", "Black Bear Coffee Standard Ratio");
+                i.putExtra("rasioAir", 16.6945);//Blackbearcoffee Standard Brewing Ratio
+                i.putExtra("keterangan", "");
                 startActivity(i);
                 break;
             case 4:
                 i = new Intent(this, RatioActivity.class);
-                i.putExtra("judul","SCAA Standard Ratio");
-                i.putExtra("rasioAir",18.18181818181818181818);//SCAA
-                i.putExtra("keterangan","");
+                i.putExtra("judul", "SCAA Standard Ratio");
+                i.putExtra("rasioAir", 18.18181818181818181818);//SCAA
+                i.putExtra("keterangan", "");
                 startActivity(i);
                 break;
             case 5:
                 i = new Intent(this, RatioActivity.class);
-                i.putExtra("judul","SCAE Standard Ratio");
-                i.putExtra("rasioAir",16.6666666666666666666667);//SCAE
-                i.putExtra("keterangan","");
+                i.putExtra("judul", "SCAE Standard Ratio");
+                i.putExtra("rasioAir", 16.6666666666666666666667);//SCAE
+                i.putExtra("keterangan", "");
                 startActivity(i);
                 break;
-            default:break;
+            default:
+                break;
         }
     }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        if(item.getItemId()== android.R.id.home){
+        if (item.getItemId() == android.R.id.home) {
             onBackPressed();
         }
         return super.onOptionsItemSelected(item);
